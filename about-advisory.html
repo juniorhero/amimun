@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+
+<head>
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" media="all" href="style.css">
+	<link rel="icon" type="images/x-icon" href="images/title.ico">
+		
+	<!-- PHP Includes -->
+<!-- Meta & Site Info -->
+<title> AMIMUN 2017 </title>
+	
+	<meta name="description" content="Amity International Model United Nations">
+	<meta name="theme-color" content="#01458e">
+	<meta id="viewport" name="viewport" content="width=device-width">
+	<!-- Enforces minimum width of viewport to 600 -->
+	<script>
+		window.onload = function(){
+			if(window.innerWidth<600){
+				console.log('viewport fixed at 600');
+				var viewport = document.getElementById('viewport');
+				viewport.setAttribute('content','width=600');
+				document.getElementById('radcam-slide').setAttribute("style","height:"+window.innerHeight+"px");
+			}
+		}
+	</script>
+	
+	<!-- JS -->
+	<script src = "js/functions.js"> </script>
+	<script src = "js/modernizr.js"> </script>
+	
+	
+	<!-- jQuery -->
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> </script>
+	
+	<!-- Smooth Scrolling Script -->
+	<script>
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+	
+	<!-- Pre-load Images -->
+	<img src="images/menu-logo-blue.png" style="display: none;">
+	<img src="images/pdf_blue.png" style="display: none;">
+</head>
+
+<nav id='menubar'>
+	<div class = 'menuwrapper'>
+		
+		<a href="index.html" target="_parent">
+			<img src = "images/menu-logo.png" width="59px" height="50px" onMouseOver="blueLogo(this);" onMouseOut="whiteLogo(this);">
+		</a>
+		
+			
+	
+        <ul class="menulist">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li class="dropdownitem">
+                <label>About Us</label>
+
+
+                <ul class="dropdownlist">
+                    <li><a href="about-home.html">About AMIMUN</a></li>
+
+                    <li><a href="about-amity.html">About Amity</a></li>
+
+                    <li><a href="about-msg.html">Messages</a></li>
+
+
+
+                    <li><a href="about-advisory.html">Advisory Board</a></li>
+
+
+                    <li><a href="about-secretariat.html">Secretariat</a></li>
+                </ul>
+
+
+            </li>
+
+            <li class="dropdownitem">
+                <label>Apply</label>
+                <ul class="dropdownlist">
+                    <li><a href="DelegateForm.aspx">Delegate application</a></li>
+<li><a href="ip.html">International Press application</a></li>
+                </ul>
+
+
+            </li>
+            <li class="dropdownitem">
+                <label>Committees</label>
+                <ul class="dropdownlist">
+                    <li><a href="prep-committees.html#3" onClick="committeeClick('node-3')">Disarmament and International Security Committee</a></li>
+
+
+                    <li><a href="prep-committees.html#7" onClick="committeeClick('node-7')">International Monetary Fund</a></li>
+
+                    <li><a href="prep-committees.html#4" onClick="committeeClick('node-4')">United Nations Environment Programme</a></li>
+                    <li><a href="prep-committees.html#6" onClick="committeeClick('node-6')">Commission on the Status of Women</a></li>
+
+                    <li>
+                        <a href="prep-committees.html#1" onClick="committeeClick('node-1')">
+                            United Nations Office on Drugs and Crime
+                        </a>
+                    </li>
+
+
+                    
+
+
+						<li><a href="prep-committees.html#5" onClick="committeeClick('node-5')">United Nations Security Council</a></li><li><a href="prep-committees.html#9" onClick="committeeClick('node-9')">World Health Organisation - Crisis Committee</a></li>
+
+                </ul>
+            </li>
+
+
+
+
+            <li class="dropdownitem">
+                <label>Resources</label>
+                <ul class="dropdownlist">
+                    
+
+                    
+
+                    					<li><a href="bank.html">Payment Details</a></li>
+
+					
+					<li><a href="background-guide.html">Background Guides</a></li>
+					
+					<li><a href="venue.html">Venue</a></li>
+					
+					<li><a href="schedule.html">Schedule</a></li>
+
+                    
+
+                </ul>
+
+            </li>
+
+           <li class="dropdownitem">
+			<label>AMIMUN Club</label>
+			<ul class="dropdownlist">
+			<li><a href="club.html">Message</a></li>
+			<li><a href="club-form.html">Membership form for AUUP Students</a></li>
+			</ul>
+		     </li>
+
+            <li><a href="contact.html">Contact Us</a></li>
+
+<div style="position: relative;
+padding-left: 693px;
+padding-top: 7px;">
+			<a target="_blank" href="https://twitter.com/Amity_Amimun"> <img src="images/32.png"></a>		<a target="_blank" href="https://www.facebook.com/amitymun"> <img src="images/32f.png"><span></span></a> <a target="_blank" href="https://instagram.com/amity_amimun"><img src="images/instagram.png"></a> 
+</div>
+
+        </ul>
+		
+		
+			
+	</div>
+</nav>							<body onLoad="stretch_footer(); count(); resizeCommitteeWrapper(); handleCommitteeClick();" onresize = "stretch_footer(); resizeCommitteeWrapper()" style="background: url('images/backgrounds/bg_secrt.jpg');">
+<section class = 'oxwrapper'>
+
+	
+<div class="oxcontent">
+	
+		<h1 align="center"> Advisory board AMIMUN'17 </h1>
+	
+		
+		
+		
+		
+
+
+
+		
+
+
+
+
+		
+
+
+
+
+
+		
+		
+
+
+
+
+
+
+
+
+
+<h3 id="sectitle">Dina Bouchkouch</h3>
+		<div id="secretariat" style="min-height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;" >
+		<p><img style="float: left;
+    margin-right: 20px;
+    margin-bottom: 49px;
+    height: 150px;
+    width: 150px"  src="images/advisors/dina.jpg"></p>
+		
+		
+	<p>Bordeaux Montaigne University (France)
+</p>
+
+	
+
+
+
+<p>
+MUN is the occasion to live the amazing experience of representing a country in a truly international and multicultural environment, debating over hot topics of the current geopolitical agenda, learning to negotiate and compromise to reach consensus, making new friends. No one needs to be a professional of the international relations, or on diplomacy, it is all about learning. Today you might be delegates in your College, you're learning, getting familiar with the concept, its rules, but who knows maybe tomorrow you will be sitting in New-York or Geneva at the UN's headquarters, small steps guide you to higher places. AMIMUN'17 is your opportunity to learn how to be a delegate and to feel the atmosphere of a MUN. Being helped, supported and surrounded by the AMITY's team, which this year is organizing its 6th MUN but also boosted by Indonesia MUN and Young Leaders' Consortium.
+
+</p>
+		</div>
+
+
+
+
+<h3 id="sectitle">Ravyansh Yadav</h3>
+		<div id="secretariat" style="min-height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;" >
+		<p><img style="float: left;
+    margin-right: 20px;
+    margin-bottom: 49px;
+    height: 150px;
+    width: 150px"  src="images/advisors/ravyansh.jpg"></p>
+		
+		
+	<p>University of Manchester
+</p>
+
+	
+
+
+
+<p>
+The Model United Nations is an incredibly powerful platform for the youth to understand how the world works and deals with its problems. We cannot, as future world leaders, suggest to build walls as solutions to security threats. We must, instead, find ways to, if not resolve, then at least to endure them together by building bridges and forging lasting and incorruptible relationships. Let's focus on resolving issues that will be discussed over the duration of the conference instead of going back and forth with cause and effect for an unwarranted period of time. I am confident that AMIMUN will prove to be a fine example of the youth's capability to influence and bring about change, as it always has been. I look forward to watching AMIMUN achieve new milestones and setting examples for all other institutions to follow.
+
+</p>
+		</div>
+
+
+
+		<h3 id="sectitle">Anupriya Chakraborty</h3>
+		<div id="secretariat" style="min-height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;" >
+		<p><img style="float: left;
+    margin-right: 20px;
+    margin-bottom: 49px;
+    height: 150px;
+    width: 150px"  src="images/advisors/anupriya.jpg"></p>
+		
+		
+	<p>Pennsylvania State University 
+</p>
+
+	
+
+
+
+<p>
+MUNs are a powerful tool to create ripples in the mind of the youth about issues further away from home.
+
+It propagates the idea of global community and helps young minds broaden their perspectives on real
+
+world issues that need our attention TODAY. I have been associated with AMIMUN since 2014 and
+
+before it, I was ignorant to how powerful a medium it can be to spark important discussions and ideas.
+
+Since its conception, it has grown every year to become bigger and better. It has always realized the
+
+importance of difficult conversations and unconventional committees. I feel honored to be on the advisory
+
+panel of AMIMUN'17, and hope that it continues to strive to make a real difference.
+</p>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+		<h3 id="sectitle">Aamir Ahmed</h3>
+		<div id="secretariat" style="min-height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;" >
+		<p><img style="float: left;
+    margin-right: 20px;
+    margin-bottom: 49px;
+    height: 150px;
+    width: 150px"  src="images/advisors/aamir.jpg" alt="Aamir Ahmed"></p>
+		
+		
+	<p></p>
+
+	<p>Alumnus, Amity University</p>
+
+
+
+<p> My journey with MUNs began with AMIMUN 2011, and since then there's been no looking back. I consider it an honor to be a part of AMIMUN'17 as an Advisor. I'm really proud how AMIMUN has become a legacy which has always strived to introduce new ideas, in the form of unconventional committees, which in turn open up an entirely new side of role-based debating. I've been associated with AMIMUN as a delegate, as the Secretary General in 2014, a member of the Executive Board, and as a member of the Advisory Panel, and thus, I can confidently say that AMIMUN has been growing with each year, ever since its inception. I'm really excited about AMIMUN'17 as I'll be chairing the WHO Crisis Committee which is a one-of-it's kind convention of members, and I'm confident this MUN is going to be an absolutely delightful experience for everyone. Cheers! </p>
+
+
+		</div>
+
+
+		
+		
+		
+				
+		<h3 id="sectitle">Satrajit Sahani</h3>
+		<div id="secretariat" style="min-height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;">
+		<p><img style="float: left;
+    margin-right: 20px;
+    margin-bottom: 49px;
+    height: 150px;
+    width: 150px" src="images/advisors/satrajit.jpg" alt="Satrajit Sahani"></p>
+		
+		
+
+
+	<p>Alumnus, Amity University</p>
+
+<p>
+Now in its sixth year, AMIMUN has grown leaps and bounds from its humble beginnings in 2011. Delegates from all over India and abroad, will engage in well-directed debates in any one of our seven committees which are being simulated this year. I expect AMIMUN 2017 to leave a lasting impression on your hearts and minds long after the conference comes to an end. It is indeed my honour and privilege to welcome you all to the 6th edition of Amity International Model United Nations Conference 2017</p>
+		</div>
+
+
+
+
+
+
+<h3 id="sectitle">Monish Kumar</h3>
+		<div id="secretariat" style="min-height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;" >
+		<p><img style="float: left;
+    margin-right: 20px;
+    margin-bottom: 49px;
+    height: 150px;
+    width: 150px"  src="images/advisors/monish.jpg"></p>
+		
+		
+	<p></p>
+
+	<p>Alumnus, Amity University</p>
+
+
+
+<p>Dear Delegates, since its inception, AMIMUN has set benchmarks with its every edition and will continue to do so.
+It gives me immense pleasure inviting you all to be a part of AMIMUN'17 to witness the most extravagant conference of the year.
+The extraordinary committees has always been exalted and we have even better in store for you this year.
+AMIMUN assures you of a world class experience with Delegates coming from across the globe. 
+We assure you that AMIMUN can be the best possible platform to test your skills as possible future leaders. Cheers!
+Hope to see you at the conference.</p>
+
+
+		</div>
+
+
+
+		<h3 id="sectitle">Pritika Kohli</h3>
+		<div id="secretariat" style="min-height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;" >
+		<p><img style="float: left;
+    margin-right: 20px;
+    margin-bottom: 49px;
+    height: 150px;
+    width: 150px"  src="images/advisors/pritika.jpg"></p>
+		
+		
+	<p></p>
+
+	<p>Amity University, Noida</p>
+
+
+
+<p>Dear Delegates, since its inception, AMIMUN has through great efforts and outstanding participation has been able to break and create bench mark for itself and for other events to compete with.
+It gives me immense pleasure inviting you all to be a part of AMIMUN'17 to be the part of the most thrilling/amazing/immersive/acknowledged/great conference of the year.
+The extraordinary committees has always been exalted and we have even better in store for you this year.
+AMIMUN assures you of a world class experience with Delegates coming from across the globe. 
+We promise you that AMIMUN will be the best possible platform to find and solidify yourself as to be the leaders of tomorrow. Cheers!
+Hope to see you at the conference.
+
+</p>
+
+
+		</div>
+	
+</section>
+
+</body>
+
+<footer id="footer">	<p>		<a href="https://twitter.com/Amity_Amimun"> <img src="images/32.png"><span>Follow us on Twitter</span></a>		<a href="https://www.facebook.com/amitymun"> <img src="images/32f.png"><span>Like us on Facebook</span></a> <img src="images/instagram.png">	<a href="https://instagram.com/amity_amimun"><span>Follow us on Instagram</span>  </a>	<br>		Copyright &copy 2016 <a href="http://www.amity.edu/">Amity University Noida</a> India 		<br>					      <br>  </p><script type="text/javascript" id="inspectletjs">
+window.__insp = window.__insp || [];
+__insp.push(['wid', 1354058204]);
+(function() {
+function ldinsp(){if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
+})();
+</script>
+</footer>

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+
+
+<head>
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" media="all" href="style.css">
+	<link rel="icon" type="images/x-icon" href="images/title.ico">
+	
+	<!-- PHP Includes -->
+		
+	<!-- Meta & Site Info -->
+	<title>AMIMUN 2017</title>
+	
+	<meta name="description" content="Amity International Model United Nations">
+	<meta name="theme-color" content="#01458e">
+	<meta id="viewport" name="viewport" content="width=device-width">
+	<!-- Enforces minimum width of viewport to 600 -->
+	<script>
+		window.onload = function(){
+			if(window.innerWidth<600){
+				console.log('viewport fixed at 600');
+				var viewport = document.getElementById('viewport');
+				viewport.setAttribute('content','width=600');
+				document.getElementById('radcam-slide').setAttribute("style","height:"+window.innerHeight+"px");
+			}
+		}
+	</script>
+	
+	
+	<script>
+	
+	$(function() { //When the document loads
+  $("#menu1").bind("click", function() {
+    $(window).scrollTop($("#ICJ").offset().top); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+});
+
+</script>
+	<!-- JS -->
+	<script src = "js/functions.js"> </script>
+	<script src = "js/modernizr.js"> </script>
+	
+	
+	<!-- jQuery -->
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> </script>
+	
+	<!-- Smooth Scrolling Script -->
+	<script>
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+	
+	<!-- Pre-load Images -->
+	<img src="images/menu-logo-blue.png" style="display: none;">
+	<img src="images/pdf_blue.png" style="display: none;">
+</head>
+
+<nav id='menubar'>
+	<div class = 'menuwrapper'>
+		
+		<a href="index.html" target="_parent">
+			<img src = "images/menu-logo.png" width="59px" height="50px" onMouseOver="blueLogo(this);" onMouseOut="whiteLogo(this);">
+		</a>
+		
+		
+		
+        <ul class="menulist">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li class="dropdownitem">
+                <label>About Us</label>
+
+
+                <ul class="dropdownlist">
+                    <li><a href="about-home.html">About AMIMUN</a></li>
+
+                    <li><a href="about-amity.html">About Amity</a></li>
+
+                    <li><a href="about-msg.html">Messages</a></li>
+
+
+
+                    <li><a href="about-advisory.html">Advisory Board</a></li>
+
+
+                    <li><a href="about-secretariat.html">Secretariat</a></li>
+                </ul>
+
+
+            </li>
+
+            <li class="dropdownitem">
+                <label>Apply</label>
+                <ul class="dropdownlist">
+                    <li><a href="DelegateForm.aspx">Delegate application</a></li>
+<li><a href="ip.html">International Press application</a></li>
+                </ul>
+
+
+            </li>
+
+            <li class="dropdownitem">
+                <label>Committees</label>
+                <ul class="dropdownlist">
+
+
+                    <li><a href="prep-committees.html#3" onClick="toggle('node-3')" onClick="committeeClick('node-3')">Disarmament and International Security Committee</a></li>
+
+
+                    <li><a href="prep-committees.html#7" onClick="toggle('node-7')" onClick="committeeClick('node-7')">International Monetary Fund</a></li>
+
+                    <li><a href="prep-committees.html#4" onClick="toggle('node-4')">United Nations Environment Programme</a>
+                    </li>
+
+                    
+
+                    <li><a href="prep-committees.html#6" onClick="toggle('node-6')" onClick="committeeClick('node-6')">Commission on the Status of Women</a></li>
+
+                    <li>
+                        <a href="prep-committees.html#1" onClick="toggle('node-1')" onClick="committeeClick('node-1')">
+                            United Nations Office on Drugs and Crime
+                        </a>
+                    </li>
+
+
+                    
+
+
+                    <li><a href="prep-committees.html#5" onClick="toggle('node-5')" onClick="committeeClick('node-5')">United Nations Security Council</a></li>
+
+
+                    <li><a href="prep-committees.html#9" onClick="committeeClick('node-9')">World Health Organisation - Crisis Committee</a></li>
+
+
+
+
+                </ul>
+            </li>
+
+            <li class="dropdownitem">
+                <label>Resources</label>
+                <ul class="dropdownlist">
+                    
+
+                    
+
+                    					<li><a href="bank.html">Payment Details</a></li>
+
+					
+					<li><a href="background-guide.html">Background Guides</a></li>
+					
+					<li><a href="venue.html">Venue</a></li>
+					
+					<li><a href="schedule.html">Schedule</a></li>
+
+
+                </ul>
+
+            </li>
+
+           <li class="dropdownitem">
+			<label>AMIMUN Club</label>
+			<ul class="dropdownlist">
+			<li><a href="club.html">Message</a></li>
+			<li><a href="club-form.html">Membership form for AUUP Students</a></li>
+			</ul>
+		     </li>
+
+            <li><a href="contact.html">Contact Us</a></li>
+
+<div style="position: relative;
+padding-left: 693px;
+padding-top: 7px;">
+			<a target="_blank" href="https://twitter.com/Amity_Amimun"> <img src="images/32.png"></a>		<a target="_blank" href="https://www.facebook.com/amitymun"> <img src="images/32f.png"><span></span></a> <a target="_blank" href="https://instagram.com/amity_amimun"><img src="images/instagram.png"></a> 
+</div>
+
+        </ul>	
+		
+	</div>
+</nav>							<body onLoad="stretch_footer(); count(); resizeCommitteeWrapper(); handleCommitteeClick();" onresize = "stretch_footer(); resizeCommitteeWrapper()" style="background: url('images/backgrounds/bg4.jpg');">
+<section class = 'oxwrapper'>
+
+	<div class="oxcontent">
+
+		<h1 align="center"> AMIMUN'17 Committees </h1>
+		
+
+		
+		
+		<p>
+			
+		</p>
+			
+		
+        <div id="GeneralAssembly">
+		
+		<ul class="committee-list">
+		
+		
+		 <a class="anchor" id="3"></a><li>		<a style="cursor:pointer" onClick="toggle('node-3')"> United Nations General Assembly - Disarmament and
+
+International Security Committee </a>		<ul class='committee-topics' id='node-3' style='display:none'>      <p class="committee-topics" style="padding: 8px;">
+ 
+ 
+ UNGA - DISEC - The General Assembly (GA) is the main deliberative
+
+of the UN. By Article 10, Chapter IV of the United Nations Charter it is 
+
+mandated to make recommendations to the Member Nations or to the Security 
+
+Council on any matter of international significance or matters relating to all 
+
+the other organs of the UN including admission of new Members Nations to 
+
+the UN, and selection of Members for other organs of the United Nations. 
+
+Every Member Nation of the UN is treated equally in this body by virtue of 
+
+holding one vote.
+
+
+
+
+
+
+
+ 
+ </p>
+
+ <p>Agenda : Measures to curb the growing threat of non-state actors with special focus on the Middle East</p>
+      
+
+      <table style="width:100%">
+                                                     <tr>
+                                                         <td><img height="150" src="images/committee_people/sarthak.jpg" /></img></td>
+                                                         <td><img height="150" src="images/committee_people/satrajit.jpg" /></img></td>
+                                                         <td><img height="150" src="images/committee_people/pritika.jpg" /></img></td>
+                                                         <td></td>
+                                                     </tr>
+                                                     <tr style="color:white;">
+                                                         <td>Sarthak Khanna</td>
+                                                         <td>Satrajit Sahani</td>
+                                                         <td>Pritika Kohli</td>
+                                                         
+                                                     </tr>
+                                                     <tr>
+                                                         <td>Substantive Director</td>
+                                                         <td>Chairperson</td>
+                                                         <td>Co-Chairperson</td>
+                                                         
+                                                     </tr>
+                                                 </table>
+
+
+
+
+
+
+             
+            
+                  
+            
+            </ul></li>	
+ 
+ <a class="anchor" id="7"></a><li>		<a style="cursor:pointer" onClick="toggle('node-7')"> International Monetary Fund </a>		<ul class='committee-topics' id='node-7' style='display:none'>      <p class="committee-topics" style="padding: 8px;">
+ 
+ 
+
+
+The International Monetary Fund (IMF) is an organization of 189 countries, working to foster global monetary cooperation, secure financial stability, facilitate international trade, promote high employment and sustainable economic growth, and reduce poverty around the world.
+
+<p>
+Created in 1945, the IMF is governed by and accountable to the 189 countries that make up its near-global membership. Countries contribute funds to a pool through a quota system from which countries experiencing balance of payments problems can borrow money. As of 2010, the fund had SDR476.8 billion, about US$755.7 billion at then exchange rates.
+</p>
+
+<p>The IMF, also known as the Fund, was conceived at a UN conference in Bretton Woods, New Hampshire, United States, in July 1944. The 44 countries at that conference sought to build a framework for economic cooperation to avoid a repetition of the competitive devaluations that had contributed to the Great Depression of the 1930s.</p>
+
+
+<p> Agenda : The question of conditionality when providing loans to developing countries. </p>
+
+
+
+ <table style="width:100%">
+                                                     <tr>
+                                                         <td><img height="150" src="images/committee_people/neel.jpg" /></img></td>
+                                                         <td><img height="150" src="images/committee_people/sarthak_tandon.jpg" /></img></td>
+                                                         
+                                                         <td></td>
+                                                     </tr>
+                                                     <tr style="color:white;">
+                                                         <td>Neel Duttaroy</td>
+                                                         <td>Sarthak Tandon</td>
+                                                         
+                                                     </tr>
+                                                     <tr>
+                                                         <td>Managing Director</td>
+                                                         <td>First Deputy Managing Director
+                                                         </td>
+                                                         
+                                                     </tr>
+                                                 </table>
+
+
+
+ 
+ </p>
+            
+            
+                                                                                                                                                                 	</ul></li>	
+ 
+ 
+		
+<a class="anchor" id="4"></a><li>		<a style="cursor:pointer" onClick="toggle('node-4')"> United Nations Environment Programme </a>		<ul class='committee-topics' id='node-4' style='display:none'>      <p class="committee-topics" style="padding: 8px;">
+ 
+ <p>
+The United Nations Environment Programme (UNEP) is the leading global environmental authority that sets the global environmental agenda, promotes the coherent implementation of the environmental dimension of sustainable development within the United Nations system and serves as an authoritative advocate for the global environment.</p><p>
+It was founded by Maurice Strong, its first director, as a result of the United Nations Conference on the Human Environment (Stockholm Conference) in June 1972 and has its headquarters in the Gigiri neighborhood of Nairobi, Kenya. UNEP also has six regional offices and various country offices.</p><p>
+Its activities cover a wide range of issues regarding the atmosphere, marine and terrestrial ecosystems, environmental governance and green economy. It has played a significant role in developing international environmental conventions, promoting environmental science and information and illustrating the way those can be implemented in conjunction with policy, working on the development and implementation of policy with national governments, regional institutions in conjunction with environmental non-governmental organizations (NGOs). </p>
+                                                                                                                                                                                                       
+
+
+
+<p> Agenda 1 : Inclusive development for sustainable growth  <br>
+ Agenda 2. Implementing carbon footprints as base models for industrial exchange </p>
+
+
+
+
+
+ <table style="width:100%">
+                                                     <tr>
+                                                         <td><img height="150" src="images/committee_people/vardha.jpg" /></img></td>
+                                                         <td><img height="150" src="images/committee_people/shayer.jpg" /></img></td>
+                                                         <td><img height="150" src="images/committee_people/abhradeep.jpg" /></img></td>
+                                                         <td></td>
+                                                     </tr>
+                                                     <tr style="color:white;">
+                                                         <td>Vardha Kharbanda</td>
+                                                         <td>Shayer Majumdar</td>
+                                                         <td>Abhradeep Mukherjee</td>
+                                                         
+                                                     </tr>
+                                                     <tr>
+                                                         <td>Rapporteur</td>
+                                                         <td>Chairperson</td>
+                                                         <td>Vice Chairperson</td>
+                                                         
+                                                     </tr>
+                                                 </table>
+
+
+ </p>	</ul></li>	
+ 
+ 
+ <a class="anchor" id="6"></a><li>		<a style="cursor:pointer" onClick="toggle('node-6')">Commission on the Status of Women </a>		<ul class='committee-topics' id='node-6' style='display:none'>      <p class="committee-topics" style="padding: 8px;">
+ 
+ 
+
+
+
+<p>
+
+The Commission on the Status of Women (CSW or UNCSW) is a functional commission of the United Nations Economic and Social Council (ECOSOC), one of the main UN organs within the United Nations. Every year, representatives of Member States gather at United Nations Headquarters in New York to evaluate progress on gender equality, identify challenges, set global standards and formulate concrete policies to promote gender equality and advancement of women worldwide.
+
+</p><p>
+The Commission consists of one representative from each of the 45 Member States elected by the Council on the basis of equitable geographical distribution: thirteen members from Africa; eleven from Asia; nine from Latin America and Caribbean; eight from Western Europe and other States and four from Eastern Europe. Members are elected for a period of four years. 
+
+</p><p>
+Among its activities, the CSW drafted several conventions and declarations, including the Declaration on the Elimination of Discrimination against Women in 1967 and women-focused agencies such as UNIFEM and INSTRAW. The Commission's priority theme for its 57th session, March 2013 was announced as the elimination and prevention of all forms of violence against women and girls. Ahead of that an Expert Group Meeting (EGM): prevention of violence against women and girls was held in Bangkok, Thailand, from 17 to 20 September 2012.
+</p><p>
+
+
+<p> Agenda : Protection of Rights of Women with special emphasis on Reproductive Rights </p>
+
+
+<table style="width:100%">
+                                                     <tr>
+                                                         <td><img height="150" src="images/committee_people/Divya.jpg" /></img></td>
+                                                         <td><img height="150" src="images/committee_people/harsh.jpg" /></img></td>
+                                                         <td><img height="150" src="images/committee_people/Syeda.jpg" /></img></td>
+                                                         <td></td>
+                                                     </tr>
+                                                     <tr style="color:white;">
+                                                         <td>Divya Khanna</td>
+                                                         <td>Harsh Vardhan Yadav</td>
+                                                         <td>Syeda Sana</td>
+                                                         
+                                                     </tr>
+                                                     <tr>
+                                                         <td>Rapporteur</td>
+                                                         <td>Chairperson</td>
+                                                         <td>Vice Chairperson</td>
+                                                         
+                                                     </tr>
+                                                 </table>
+
+
+
+
+ </p>
+
+
+
+
+                                                                                                                                                                                                                                                            
+
+
+	</ul></li>
+ 
+ 
+ 
+ 
+
+		<a class="anchor" id="1"></a><li>		<a style="cursor:pointer" onClick="toggle('node-1')"> United Nations Office On Drugs And Crime </a>		<ul class='committee-topics' id='node-1' style='display:none'>      <p class="committee-topics" style="padding: 8px;">
+		The United Nations Office on Drugs and Crime is a global leader in the fight against illicit drugs and international crime. Established in 1997 through a merger between the United Nations Drug Control Programme and the Centre for International Crime Prevention, UNODC operates in all regions of the world through an extensive network of field offices. UNODC relies on voluntary contributions, mainly from Governments, for 90 per cent of its budget.
+
+
+<p>
+
+UNODC is mandated to assist Member States in their struggle against illicit drugs, crime and terrorism. In the Millennium Declaration, Member States also resolved to intensify efforts to fight transnational crime in all its dimensions, to redouble the efforts to implement the commitment to counter the world drug problem and to take concerted action against international terrorism.
+ </p>
+
+
+<p>
+	Agenda 1: Transnational operations of human trafficking with focus on sexual exploitation in South East Asia. <br>
+Agenda 2: Solving the issue of opiate trade and trafficking.
+
+</p>
+
+ <table style="width:100%">
+                                                     <tr>
+                                                         <td><img height="150" src="images/committee_people/preetam.jpg" /></img></td>
+                                                         <td><img height="150" src="images/committee_people/aaron.jpg" /></img></td>
+                                                         <td><img height="150" src="images/committee_people/akrajit.jpg" /></img></td>
+                                                         <td></td>
+                                                     </tr>
+                                                     <tr style="color:white;">
+                                                         <td>Preetam Mohanty</td>
+                                                         <td>Aaron Mirza</td>
+                                                         <td>Arkajit Naskar</td>
+                                                         
+                                                     </tr>
+                                                     <tr>
+                                                         <td>Substantive Director</td>
+                                                         <td>Chairperson</td>
+                                                         <td>Vice Chairperson</td>
+                                                         
+                                                     </tr>
+                                                 </table>
+
+
+
+ </p>		
+
+
+
+
+</ul></li>
+ 
+
+
+ 
+  <a class="anchor" id="5"></a><li>		<a style="cursor:pointer" onClick="toggle('node-5')"> United Nations Security Council </a>		<ul class='committee-topics' id='node-5' style='display:none'>      <p class="committee-topics" style="padding: 8px;">
+ 
+ 
+Under the Charter, the Security Council has primary responsibility for the
+
+maintenance of international peace and security. It has 15 Members, and each 
+
+Member has one vote. Under the Charter, all Member States are obligated to 
+
+comply with Council decisions. The Security Council takes the lead in 
+
+determining the existence of a threat to the peace or act of aggression. It calls 
+
+upon the parties to a dispute to settle it by peaceful means and recommends 
+
+methods of adjustment or terms of settlement. In some cases, the Security 
+
+Council can resort to imposing sanctions or even authorize the use of force to 
+
+maintain or restore international peace and security.
+<p>
+
+The Security Council also recommends to the General Assembly the 
+
+appointment of the Secretary-General and the admission of new Members to 
+
+the United Nations. And, together with the General Assembly, it elects the 
+
+judges of the International Court of Justice.
+
+
+</p>
+ 
+
+ <p> Agenda: Situation in the Indian Subcontinent with special emphasis on Kashmir valley.  </p>
+ 
+
+
+ <table style="width:100%">
+                                                     <tr>
+                                                         <td><img height="150" src="images/committee_people/Siddharth.jpg"/></img></td>
+                                                         <td><img height="150" src="images/committee_people/Bhoomik.jpg" /></img></td>
+                                                       
+                          
+                                                     </tr>
+                                                     <tr style="color:white;">
+                                                         <td>Sidharth Das</td>
+                                                         <td>Bhoomik Sharma</td>
+                                                         
+                                                     </tr>
+                                                     <tr>
+                                                         <td>President</td>
+                                                         <td>Vice President</td>
+                                                         
+                                                     </tr>
+                                                 </table>
+
+
+ </p>
+
+
+
+	</ul></li>	
+
+
+
+	 <a class="anchor" id="9"></a><li>		<a style="cursor:pointer" onClick="toggle('node-9')"> World Health Organisation - Crisis Committee </a>		<ul class='committee-topics' id='node-9' style='display:none'>      <p class="committee-topics" style="padding: 8px;">
+ 
+ 
+A certain refugee camp, which is currently under UN aid, has constantly been contacting the WHO about strange behavior of the people at the refugee camp. The people seem to be sick with something experts haven't really been able to identify, yet. Since the number of people showing such anomalies are increasing everyday, the team on ground is suspecting this sickness to be contagious.
+
+<p>
+
+The WHO has called for an emergency meeting to discuss the graveness of the problem, and devise a contingency plan.
+
+
+
+</p>
+ 
+
+ <p> Agenda: Confidential  </p>
+ 
+
+  <table style="width:100%">
+                                                     <tr>
+                                                         <td><img height="150" src="images/committee_people/shagun.jpg"/></img></td>
+                                                         <td><img height="150" src="images/committee_people/aamir.jpg" /></img></td>
+                                                       
+                          
+                                                     </tr>
+                                                     <tr style="color:white;">
+                                                         <td>Shagun Shah</td>
+                                                         <td>Aamir Ahmed</td>
+                                                         
+                                                     </tr>
+                                                     <tr>
+                                                         <td>Chairperson</td>
+                                                         <td>Chairperson</td>
+                                                         
+                                                     </tr>
+                                                 </table>
+
+
+
+<!--
+ <table style="width:100%">
+                                                     <tr>
+                                                         <td><img height="150" src="images/committee_people/Siddharth.jpg"/></img></td>
+                                                         <td><img height="150" src="images/committee_people/Bhoomik.jpg" /></img></td>
+                                                       
+                          
+                                                     </tr>
+                                                     <tr style="color:white;">
+                                                         <td>Sidharth Das</td>
+                                                         <td>Bhoomik Sharma</td>
+                                                         
+                                                     </tr>
+                                                     <tr>
+                                                         <td>President</td>
+                                                         <td>Vice President</td>
+                                                         
+                                                     </tr>
+                                                 </table>
+
+                                             -->
+
+
+
+ </p>
+
+
+
+	</ul></li>	
+ 
+
+ 
+ 
+ </ul></li>	
+ 
+ 
+ 
+ 
+ 
+			</ul>
+		
+		</div>
+		
+        
+	</div>
+	
+</section>
+
+</body>
+
+<footer id="footer">	<p>		<a href="https://twitter.com/Amity_Amimun"> <img src="images/32.png"><span>Follow us on Twitter</span></a>		<a href="https://www.facebook.com/amitymun"> <img src="images/32f.png"><span>Like us on Facebook</span></a> <img src="images/instagram.png">	<a href="https://instagram.com/amity_amimun"><span>Follow us on Instagram</span>  </a>	<br>		Copyright &copy 2016 <a href="http://www.amity.edu/">Amity University Noida</a> India 		<br>					</p><script type="text/javascript" id="inspectletjs">
+window.__insp = window.__insp || [];
+__insp.push(['wid', 1354058204]);
+(function() {
+function ldinsp(){if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
+})();
+</script>
+</footer>

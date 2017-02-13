@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+
+<head>
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" media="all" href="style.css">
+<link rel="icon" type="images/x-icon" href="images/title.ico">
+		
+	<!-- PHP Includes -->
+		
+	<!-- Meta & Site Info -->
+	<title> AMIMUN 2017 </title>
+	
+	<meta name="description" content="Amity International Model United Nations">
+	<meta name="theme-color" content="#01458e">
+	<meta id="viewport" name="viewport" content="width=device-width">
+	<!-- Enforces minimum width of viewport to 600 -->
+	<script>
+		window.onload = function(){
+			if(window.innerWidth<600){
+				console.log('viewport fixed at 600');
+				var viewport = document.getElementById('viewport');
+				viewport.setAttribute('content','width=600');
+				document.getElementById('radcam-slide').setAttribute("style","height:"+window.innerHeight+"px");
+			}
+		}
+	</script>
+	
+	<!-- JS -->
+	<script src = "js/functions.js"> </script>
+	<script src = "js/modernizr.js"> </script>
+	
+	
+	<!-- jQuery -->
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> </script>
+	
+	<!-- Smooth Scrolling Script -->
+	<script>
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+	
+	<!-- Pre-load Images -->
+	<img src="images/menu-logo-blue.png" style="display: none;">
+	<img src="images/pdf_blue.png" style="display: none;">
+</head>
+
+<nav id='menubar'>
+	<div class = 'menuwrapper'>
+		
+		<a href="index.html" target="_parent">
+			<img src = "images/menu-logo.png" width="59px" height="50px" onMouseOver="blueLogo(this);" onMouseOut="whiteLogo(this);">
+		</a>
+		
+			
+        <ul class="menulist">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li class="dropdownitem">
+                <label>About Us</label>
+
+
+                <ul class="dropdownlist">
+                    <li><a href="about-home.html">About AMIMUN</a></li>
+
+                    <li><a href="about-amity.html">About Amity</a></li>
+
+                    <li><a href="about-msg.html">Messages</a></li>
+
+
+
+                    <li><a href="about-advisory.html">Advisory Board</a></li>
+
+
+                    <li><a href="about-secretariat.html">Secretariat</a></li>
+                </ul>
+
+
+            </li>
+
+            <li class="dropdownitem">
+                <label>Apply</label>
+                <ul class="dropdownlist">
+                    <li><a href="DelegateForm.aspx">Delegate application</a></li>
+                    <li><a href="ip.html">International Press application</a></li>
+                </ul>
+
+
+            </li>
+            <li class="dropdownitem">
+                <label>Committees</label>
+                <ul class="dropdownlist">
+                    <li><a href="prep-committees.html#3" onClick="committeeClick('node-3')">Disarmament and International Security Committee</a></li>
+
+
+                    <li><a href="prep-committees.html#7" onClick="committeeClick('node-7')">International Monetary Fund</a></li>
+
+                    <li><a href="prep-committees.html#4" onClick="committeeClick('node-4')">United Nations Environment Programme</a></li>
+                    <li><a href="prep-committees.html#6" onClick="committeeClick('node-6')">Commission on the Status of Women</a></li>
+
+                    <li>
+                        <a href="prep-committees.html#1" onClick="committeeClick('node-1')">
+                            United Nations Office on Drugs and Crime
+                        </a>
+                    </li>
+
+
+                    
+
+
+						<li><a href="prep-committees.html#5" onClick="committeeClick('node-5')">United Nations Security Council</a></li><li><a href="prep-committees.html#9" onClick="committeeClick('node-9')">World Health Organisation - Crisis Committee</a></li>
+
+                </ul>
+            </li>
+
+
+
+
+            <li class="dropdownitem">
+                <label>Resources</label>
+                <ul class="dropdownlist">
+                     					<li><a href="bank.html">Payment Details</a></li>
+
+
+                    <li><a href="background-guide.html">Background Guides</a></li>
+
+                    <li><a href="venue.html">Venue</a></li>
+
+                    <li><a href="schedule.html">Schedule</a></li>
+
+                </ul>
+
+            </li>
+
+           <li class="dropdownitem">
+			<label>AMIMUN Club</label>
+			<ul class="dropdownlist">
+			<li><a href="club.html">Message</a></li>
+			<li><a href="club-form.html">Membership form for AUUP Students</a></li>
+			</ul>
+		     </li>
+
+            <li><a href="contact.html">Contact Us</a></li>
+
+<div style="position: relative;
+padding-left: 693px;
+padding-top: 7px;">
+			<a target="_blank" href="https://twitter.com/Amity_Amimun"> <img src="images/32.png"></a>		<a target="_blank" href="https://www.facebook.com/amitymun"> <img src="images/32f.png"><span></span></a> <a target="_blank" href="https://instagram.com/amity_amimun"><img src="images/instagram.png"></a> 
+</div>
+
+        </ul>
+			
+	</div>
+</nav>							<body onLoad="stretch_footer(); count(); resizeCommitteeWrapper(); handleCommitteeClick();" onresize = "stretch_footer(); resizeCommitteeWrapper()" style="background: url('images/backgrounds/bg09.png');">
+<section class = 'oxwrapper'>
+
+	
+	<div class="oxcontent">
+
+    <h1 align=center>AMIMUN'17 Background Guide </h1>
+
+
+<h3 align="center">
+<a href="https://goo.gl/XkYzYb" target="_blank">DISEC Background Guide</a> <br>
+<a href="https://goo.gl/dBjG3g" target="_blank">IMF Background Guide</a> <br>
+<a href="https://goo.gl/UJC7j7" target="_blank">UNEP Background Guide</a> <br>
+<a href="https://goo.gl/Yrs5T4" target="_blank">CSW Background Guide</a>
+</h3>
+    
+    </div>
+	
+</section>
+
+<footer id="footer">	<p>		<a href="https://twitter.com/Amity_Amimun"> <img src="images/32.png"><span>Follow us on Twitter</span></a>		<a href="https://www.facebook.com/amitymun"> <img src="images/32f.png"><span>Like us on Facebook</span></a> <img src="images/instagram.png">	<a href="https://instagram.com/amity_amimun"><span>Follow us on Instagram</span>  </a>	<br>		Copyright &copy 2016 <a href="http://www.amity.edu/">Amity University Noida</a> India 		<br>					      <br>  </p><script type="text/javascript" id="inspectletjs">
+window.__insp = window.__insp || [];
+__insp.push(['wid', 1354058204]);
+(function() {
+function ldinsp(){if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
+})();
+</script>
+</footer>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+
+<head>
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" media="all" href="style.css">
+	<link rel="icon" type="images/x-icon" href="images/title.ico">
+	
+
+	<title>AMIMUN 2017</title>
+	
+	<meta name="description" content="Amity International Model United Nations">
+	<meta name="theme-color" content="#01458e">
+	<meta id="viewport" name="viewport" content="width=device-width">
+	<!-- Enforces minimum width of viewport to 600 -->
+	<script>
+		window.onload = function(){
+			if(window.innerWidth<600){
+				console.log('viewport fixed at 600');
+				var viewport = document.getElementById('viewport');
+				viewport.setAttribute('content','width=600');
+				document.getElementById('radcam-slide').setAttribute("style","height:"+window.innerHeight+"px");
+			}
+		}
+	</script>
+	
+	
+	<script>
+	
+	$(function() { //When the document loads
+  $("#menu1").bind("click", function() {
+    $(window).scrollTop($("#ICJ").offset().top); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+});
+
+</script>
+	<!-- JS -->
+	<script src = "js/functions.js"> </script>
+	<script src = "js/modernizr.js"> </script>
+	
+	
+	<!-- jQuery -->
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> </script>
+	
+	<!-- Smooth Scrolling Script -->
+	<script>
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+	
+	<!-- Pre-load Images -->
+	<img src="images/menu-logo-blue.png" style="display: none;">
+	<img src="images/pdf_blue.png" style="display: none;">
+</head>
+
+<nav id='menubar'>
+	<div class = 'menuwrapper'>
+		
+		<a href="index.html" target="_parent">
+			<img src = "images/menu-logo.png" width="59px" height="50px" onMouseOver="blueLogo(this);" onMouseOut="whiteLogo(this);">
+		</a>
+		
+		
+		
+        <ul class="menulist">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li class="dropdownitem">
+                <label>About Us</label>
+
+
+                <ul class="dropdownlist">
+                    <li><a href="about-home.html">About AMIMUN</a></li>
+
+                    <li><a href="about-amity.html">About Amity</a></li>
+
+                    <li><a href="about-msg.html">Messages</a></li>
+
+
+
+                    <li><a href="about-advisory.html">Advisory Board</a></li>
+
+
+                    <li><a href="about-secretariat.html">Secretariat</a></li>
+                </ul>
+
+
+            </li>
+
+            <li class="dropdownitem">
+                <label>Apply</label>
+                <ul class="dropdownlist">
+                    <li><a href="DelegateForm.aspx">Delegate application</a></li>
+<li><a href="ip.html">International Press application</a></li>
+                </ul>
+
+
+            </li>
+
+            <li class="dropdownitem">
+                <label>Committees</label>
+                <ul class="dropdownlist">
+
+
+                    <li><a href="prep-committees.html#3" onClick="toggle('node-3')" onClick="committeeClick('node-3')">Disarmament and International Security Committee</a></li>
+
+
+                    <li><a href="prep-committees.html#7" onClick="toggle('node-7')" onClick="committeeClick('node-7')">International Monetary Fund</a></li>
+
+                    
+                    <li><a href="prep-committees.html#6" onClick="toggle('node-6')" onClick="committeeClick('node-6')">Commission on the Status of Women</a></li>
+
+                    <li>
+                        <a href="prep-committees.html#1" onClick="toggle('node-1')" onClick="committeeClick('node-1')">
+                            United Nations Office on Drugs and Crime
+                        </a>
+                    </li>
+
+
+                    
+
+
+                    <li><a href="prep-committees.html#5" onClick="toggle('node-5')" onClick="committeeClick('node-5')">United Nations Security Council</a></li>
+
+
+                    <li><a href="prep-committees.html#9" onClick="committeeClick('node-9')">World Health Organisation - Crisis Committee</a></li>
+
+
+
+
+                </ul>
+            </li>
+
+            <li class="dropdownitem">
+                <label>Resources</label>
+                <ul class="dropdownlist">
+                    
+
+                    
+
+                    					<li><a href="bank.html">Payment Details</a></li>
+
+					
+					<li><a href="background-guide.html">Background Guides</a></li>
+					
+					<li><a href="venue.html">Venue</a></li>
+					
+					<li><a href="schedule.html">Schedule</a></li>
+
+                    
+
+                </ul>
+
+            </li>
+
+           <li class="dropdownitem">
+			<label>AMIMUN Club</label>
+			<ul class="dropdownlist">
+			<li><a href="club.html">Message</a></li>
+			<li><a href="club-form.html">Membership form for AUUP Students</a></li>
+			</ul>
+		     </li>
+
+            <li><a href="contact.html">Contact Us</a></li>
+
+<div style="position: relative;
+padding-left: 693px;
+padding-top: 7px;">
+			<a target="_blank" href="https://twitter.com/Amity_Amimun"> <img src="images/32.png"></a>		<a target="_blank" href="https://www.facebook.com/amitymun"> <img src="images/32f.png"><span></span></a> <a target="_blank" href="https://instagram.com/amity_amimun"><img src="images/instagram.png"></a> 
+</div>
+
+        </ul>	
+		
+	</div>
+</nav>							<body onLoad="stretch_footer(); count(); resizeCommitteeWrapper(); handleCommitteeClick();" onresize = "stretch_footer(); resizeCommitteeWrapper()" style="background: url('images/backgrounds/bg09.png');">
+<section class = 'oxwrapper'>
+
+	<div class="oxcontent">
+
+		<h1>Messages AMIMUN'17</h1>
+		
+				
+		
+		<p>
+			
+		</p>
+			
+		
+        <div id="GeneralAssembly">
+		
+		<ul class="committee-list">
+		
+		
+		 <a class="anchor" id="3"></a><li>		<a style="cursor:pointer; text-align: center;" onClick="toggle('node-3')"> Dr. Ashok K. Chauhan, Founder President - RBEF and Chairman - AKC Group of Companies
+ </a>		<ul class='committee-topics' id='node-3'>      <p class="msg" style="padding: 8px;">
+ 
+ 
+
+ <table>
+<tr>
+<td>
+<img style="padding:271px; padding-top: 15px;
+padding-bottom:0px;" width="267" height="272" src="images/messages/ashok.jpg"></img>
+ </td>
+</tr>
+<td>
+
+
+<p class="msg" style="text-align:justify; padding: 8px;">
+
+
+The guiding vision and mission of Amity University is to prepare excellence constantly in all its endeavours while providing class education to its students. At Amity, we are passionate about grooming leaders who are not only through professionals but also good human beings with values and sanskars. For holistic development of youth at Amity University, we encourage students to organize and participate in the event that push the boundaries of creativity, innovation and making them think out of box.  <br><br>
+I am pleased to know that Amity University is organizing its Sixth Amity International Model United Nations 2017 (AMIMUN'17) on 20, 21 and 22 January, 2017, which looks forward to a participation of delegates from all over the world.  <br><br>
+I strongly believe that students at such prestigious events get a unique opportunity to become familiar with international issues and working of the United Nations Organization. They also assume the role of diplomats representing vanous member state of the United Nation and stimulate various committees, agency, specific organs and programmes of United Nation system. Through this process of debate and negotiations, delegates attempt to resolve regional and international problems in a powerful yet engaging manner.  <br><br>
+As a leader of tomorrow the skills that United Nation imparts with team work, expostory and persuasive writing, debating and negotiation are important for personal development and future successes. AMIMUN'17 thus seeks to impart experiential and cooperative learning by giving students a future focused multicultural international platform. <br><br>
+I welcome the young energetic, vibrant and creative minds to experience the uniqueness of Amity Universe at AMIMUN'17. The youth are the future of this Nation and youth empowerment is our ultimate goal.  <br><br>
+I am confident that all the participants from overseas countries and India would tremendously benefit from AMIMUN'17 as its deliberations would equip them unique talents and capabilities for their faster professional growth and for leading a joyful, pleasant and successful professional and personal life.  <br><br>
+I greatly appreciate the untiring efforts of Dr. Alpana Kakkar, Chairperson, AMIMUN'17, under the guidance of our worthy Vice Chancellor, AUUP Dr. Balvinder Shukla and the sincere and painstaking efforts of Ms. Gurmehak Mann, Secretary General, AMIMUN'17, Mr. Pankit Arora, Director General, AMIMUN'17 and the all-out support from the Organizing Committee and team of AMIMUN'17. <br><br>
+I wish all the participants a most enriching learning and a wonderful stay at our campus. 
+
+
+
+</p>
+</td>
+
+</tr>
+</table>
+
+
+
+
+ </p>	</ul></li>	
+ 
+
+
+	 <a class="anchor" id="2"></a><li>		<a style="cursor:pointer; text-align: center;" onClick="toggle('node-2')"> Dr. Atul Chauhan, Chancellor - Amity University, President - RBEF and Patron-in-chief - AMIMUN'17
+ </a>		<ul class='committee-topics' id='node-2'>      <p class="committee-topics" style="padding: 8px;">
+
+
+
+ <table>
+<tr>
+<td>
+<img style="padding:271px; padding-top: 15px;
+padding-bottom:0px;" width="267" height="272" src="images/messages/atul.jpg"></img>
+ </td>
+</tr>
+<td>
+
+
+<p class="msg" style="text-align:justify; padding: 8px;">
+Coming Soon
+
+</p>
+</td>
+
+</tr>
+</table>
+
+
+
+
+ </p>	</ul></li>	
+
+
+
+	 <a class="anchor" id="4"></a><li>		<a style="cursor:pointer;text-align:center;" onClick="toggle('node-4')"> Prof (Dr.) Balvinder Shukla, Vice Chancellor - AUUP and Patron - AMIMUN'17
+ </a>		<ul class='committee-topics' id='node-4'>      <p class="committee-topics" style="padding: 8px;">
+
+<table>
+<tr>
+<td>
+<img style="padding:271px; padding-top: 15px;
+padding-bottom:0px;" width="267" height="272" src="images/messages/balvinder.jpg"></img>
+ </td>
+</tr>
+<td>
+
+
+<p class="msg" style="text-align:justify; padding: 8px;">
+
+I welcome all delegates and participants to the sixth edition of Amity International Model United Nations Conference on the theme "Aspirare ad Inspirare" to be held on January 20th, 21st and 22nd, 2017 at Amity University Campus, Sector-125, Noida, U.P., India. <br><br>
+Model United Nations, an academic simulation of various proceedings of the United Nations with students representing the delegations of various countries has now become one of the most popular and prestigious events in schools and colleges due to its multifaceted nature. <br><br>
+AUUP hosted the first edition of MUN in the year 2011 where it witnessed the extreme relevance of learning international affairs and understanding the role of the United Nations. It emphasised the values for peace making, security, conflict prevention, social progress, better living standards and human rights. With each edition AMIMUN has grown up and today it is recognized as one of the top 40 MUNs in Asia by the United Nations, showing the potential it has as a conference. <br><br>
+
+AMIMUN 2017 will be a unique convention, with participation of delegates from all countries like Spain, Afghanistan, Turkey, Russia and various National Institutions/Universities like IIT Kharagpur , IIIT Delhi , Delhi Technological University , Delhi School of Economics, BITS Pilani , Netaji Subhash Institute of Technology,  Banaras Hindu University, Thapar University, Christ University , Banasthali Vidyapeeth , Delhi University and many more,  bringing a host of new ideas and opinions which will give birth to a new generation of strong, confident and above all compassionate leaders. <br><br>
+My best wishes to all the delegates participating in AMIMUN from all over the world. Their efforts to discourse and put forward ideas to reach fruitful conclusions regarding issues of world concern is commendable. I compliment the meticulous hard work of the organizing committee members and wish AMIMUN'17 a great success! 
+
+
+
+</p>
+</td>
+
+</tr>
+</table>
+
+
+
+
+ </p>	</ul></li>	
+
+
+
+
+
+	 <a class="anchor" id="4"></a><li>		<a style="cursor:pointer;text-align:center;" onClick="toggle('node-4')"> Dr. Alpana Kakkar, Deputy Dean Student Welfare - AUUP and Chairperson - AMIMUN'17
+ </a>		<ul class='committee-topics' id='node-4'>      <p class="committee-topics" style="padding: 8px;">
+
+<table>
+<tr>
+<td>
+<img style="padding:271px; padding-top: 15px;
+padding-bottom:0px;" width="267" height="272" src="images/messages/alpana.jpg"></img>
+ </td>
+</tr>
+<td>
+
+
+<p class="msg" style="text-align:justify; padding: 8px;">
+
+Greetings! <br> <br>
+
+I feel elated and honoured to welcome you all to the sixth edition of The Amity International Model United Nations Conference. AMIMUN'17 is a fruition of all the hard work and collection of ideas that went into the making of this successful endeavour. <br> <br>
+After careful pruning and tailoring, we bring to you the sixth year of this experience on the theme "aspirare ad inspirare" which translates to aspire to inspire. We aspire to expose you to issues of world concern and deliberate upon solutions that appease the conscience, understand the misunderstood, and correct the wrong to rise. We prepare you to take charge. <br> <br> 
+
+We are glad to introduce our Advisory Panel and the Executive Board as part of our conference, that is a talent ground of distinguished personnel from prominent spheres who have come together to scale greater heights for this convention. We are also extremely honoured to have on board The Ambassadors and top Diplomats from various countries, social activists, personages from the political spectrum, various NGOs and social organizations for our conference, which has made it more inclusive and grand in its own nature. <br><br>
+As the Chairperson, AMIMUN'17, I feel a sense of pride in being associated with such a promising team, and a conference that endeavours to be an unparalleled educational experience replete with a global touch. I assure you these three days will be an experience you never forget and will go on to inspire you for years to come. <br><br>
+We welcome you all open heartedly.
+
+
+
+</p>
+</td>
+
+</tr>
+</table>
+
+
+
+
+ </p>	</ul></li>	
+
+
+
+
+
+  
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+  
+ 
+ 
+ 
+			</ul>
+		
+		</div>
+		
+        
+	</div>
+	
+</section>
+
+</body>
+
+<footer id="footer">	<p>		<a href="https://twitter.com/Amity_Amimun"> <img src="images/32.png"><span>Follow us on Twitter</span></a>		<a href="https://www.facebook.com/amitymun"> <img src="images/32f.png"><span>Like us on Facebook</span></a> <img src="images/instagram.png">	<a href="https://instagram.com/amity_amimun"><span>Follow us on Instagram</span>  </a>	<br>		Copyright &copy 2016 <a href="http://www.amity.edu/">Amity University Noida</a> India 		<br>				 <br>  </p><script type="text/javascript" id="inspectletjs">
+window.__insp = window.__insp || [];
+__insp.push(['wid', 1354058204]);
+(function() {
+function ldinsp(){if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
+})();
+</script>
+</footer>
